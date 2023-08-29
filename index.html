@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúcia Web | Home</title>
+    <link rel="shortcut icon" href="images/lLOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <img src="images/lLOGO.png" alt="" width="100">
+            <h1>Lucia Web</h1>
+        </div>
+        <div>
+            <button onclick="mostrar()" class="button_signup">sign-up</button>
+            <button onclick="mostrar()" class="button_signin">sign-in</button>
+        </div>
+    </header>
+    
+    <main class="sidebar">
+        <div class="open-menu">
+            <svg id="open" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 6.9834C7.44772 6.9834 7 7.43111 7 7.9834C7 8.53568 7.44772 8.9834 8 8.9834H16C16.5523 8.9834 17 8.53568 17 7.9834C17 7.43111 16.5523 6.9834 16 6.9834H8Z" fill="#fff" /><path d="M7 12C7 11.4477 7.44772 11 8 11H16C16.5523 11 17 11.4477 17 12C17 12.5523 16.5523 13 16 13H8C7.44772 13 7 12.5523 7 12Z" fill="#fff" /><path d="M8 15.017C7.44772 15.017 7 15.4647 7 16.017C7 16.5693 7.44772 17.017 8 17.017H16C16.5523 17.017 17 16.5693 17 16.017C17 15.4647 16.5523 15.017 16 15.017H8Z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="#fff" /></svg>
+        </div>
+        <div class="menu">
+            <section class="open-close"><svg id="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.3394 9.32245C16.7434 8.94589 16.7657 8.31312 16.3891 7.90911C16.0126 7.50509 15.3798 7.48283 14.9758 7.85938L12.0497 10.5866L9.32245 7.66048C8.94589 7.25647 8.31312 7.23421 7.90911 7.61076C7.50509 7.98731 7.48283 8.62008 7.85938 9.0241L10.5866 11.9502L7.66048 14.6775C7.25647 15.054 7.23421 15.6868 7.61076 16.0908C7.98731 16.4948 8.62008 16.5171 9.0241 16.1405L11.9502 13.4133L14.6775 16.3394C15.054 16.7434 15.6868 16.7657 16.0908 16.3891C16.4948 16.0126 16.5171 15.3798 16.1405 14.9758L13.4133 12.0497L16.3394 9.32245Z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" fill="#fff" /></svg></section>
+            <a style="margin-top: 20px;" href="assets/notificacoes.html">Notificações de eventos</a>
+            <a href="assets/assistencia.html">Assistência Educacional</a>
+        </div>
+    </main>
+    <main class="content">
+        <section class="text">
+            <h1 id="text">O universo digital do Lúcia está a sua espera</h1>
+            <p>Aqui você pode encontrar um sistema de notificações onde irá ter todos os avisos dados pela escola para todas as turmas, também terá também uma aba na qual irá conter aulas auxiliares para todas as séries.</p>     
+        </section>
+    </main>
+    <main class="tela_logar">
+        <div class="section">
+            <div class="container">
+                <div class="row full-height justify-content-center">
+                    <div class="col-12 text-center align-self-center py-5">
+                        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                            <svg id="tela_login" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.3394 9.32245C16.7434 8.94589 16.7657 8.31312 16.3891 7.90911C16.0126 7.50509 15.3798 7.48283 14.9758 7.85938L12.0497 10.5866L9.32245 7.66048C8.94589 7.25647 8.31312 7.23421 7.90911 7.61076C7.50509 7.98731 7.48283 8.62008 7.85938 9.0241L10.5866 11.9502L7.66048 14.6775C7.25647 15.054 7.23421 15.6868 7.61076 16.0908C7.98731 16.4948 8.62008 16.5171 9.0241 16.1405L11.9502 13.4133L14.6775 16.3394C15.054 16.7434 15.6868 16.7657 16.0908 16.3891C16.4948 16.0126 16.5171 15.3798 16.1405 14.9758L13.4133 12.0497L16.3394 9.32245Z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" fill="#fff" /></svg>
+                            <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                              <label for="reg-log"></label>
+                            <div class="card-3d-wrap mx-auto">
+                                <div class="card-3d-wrapper">
+                                    <div class="card-front">
+                                        <div class="center-wrap">
+                                            <div class="section text-center">
+                                                    <h4 class="mb-4 pb-3">Log In</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-style" placeholder="RA - COM o 'sp' no final" id="loginRA">
+                                                        <i class="input-icon uil uil-at" style="color: #fff;"></i>
+                                                    </div>	
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" class="form-style" placeholder="Senha" id="loginSenha">
+                                                        <i class="input-icon uil uil-lock-alt" style="color: #fff;"></i>
+                                                    </div>
+                                                        <button class="btn mt-4"  style="color: #fff;" onclick="logar()">Login</button>
+                                                    </div>
+                                          </div>
+                                      </div>
+                                    <div class="card-back">
+                                        <div class="center-wrap">
+                                            <div class="section text-center">
+                                                <h4 class="mb-3 pb-3">Sign Up</h4>
+                                                <div class="form-group">
+                                                    <input type="number" class="form-style" placeholder="RA - SEM o 'sp' no final"  maxlength="13" name="ra" id="ra" required>
+                                                    <i class="input-icon uil uil-user" style="color: #fff;"></i>
+                                                </div>	
+                                                <div class="form-group mt-2">
+                                                    <input name="nome" type="tel" class="form-style" placeholder="Nome Completo" maxlength="100" id="nome" required>
+                                                    <i class="input-icon uil uil-phone" style="color: #fff;"></i>
+                                                </div>	
+                                                <div class="form-group mt-2">
+                                                    <input name="pass" type="password" class="form-style" placeholder="Nova senha" maxlength="45" id="senha" required>
+                                                    <i class="input-icon uil uil-lock-alt" style="color: #fff;"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input name="confirmPass" type="password" class="form-style" maxlength="45" placeholder="Confirmar senha" id="checkSenha" required>
+                                                    <i class="input-icon uil uil-lock-alt" style="color: #fff;"></i>
+                                                </div>
+                                                <button class="btn mt-4"  style="color: #fff;" onclick="addLogin()">Registrar</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script/default.js"></script>
+    <script src="script/home.js"></script>
+</body>
+</html>

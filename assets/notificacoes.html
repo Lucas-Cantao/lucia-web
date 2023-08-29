@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúcia Web | Notificações</title>
+    <link rel="stylesheet" href="../style/default.css">
+    <link rel="stylesheet" href="../style/notificacoes.css">
+    <link rel="shortcut icon" href="../images/lLOGO.png" type="image/x-icon">
+</head>
+<body>
+    <header class="topbar">
+        <a href="../index.html"><img src="../images/lLOGO.png" alt="" width="100"></a>
+        <a href="../index.html"><h1>Lucia Web</h1></a>
+        
+    </header>
+    <main class="sidebar">
+        <div class="open-menu">
+            <svg id="open" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 6.9834C7.44772 6.9834 7 7.43111 7 7.9834C7 8.53568 7.44772 8.9834 8 8.9834H16C16.5523 8.9834 17 8.53568 17 7.9834C17 7.43111 16.5523 6.9834 16 6.9834H8Z" fill="#fff" /><path d="M7 12C7 11.4477 7.44772 11 8 11H16C16.5523 11 17 11.4477 17 12C17 12.5523 16.5523 13 16 13H8C7.44772 13 7 12.5523 7 12Z" fill="#fff" /><path d="M8 15.017C7.44772 15.017 7 15.4647 7 16.017C7 16.5693 7.44772 17.017 8 17.017H16C16.5523 17.017 17 16.5693 17 16.017C17 15.4647 16.5523 15.017 16 15.017H8Z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="#fff" /></svg>
+        </div>
+        <div class="menu">
+            <section class="open-close"><svg id="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.3394 9.32245C16.7434 8.94589 16.7657 8.31312 16.3891 7.90911C16.0126 7.50509 15.3798 7.48283 14.9758 7.85938L12.0497 10.5866L9.32245 7.66048C8.94589 7.25647 8.31312 7.23421 7.90911 7.61076C7.50509 7.98731 7.48283 8.62008 7.85938 9.0241L10.5866 11.9502L7.66048 14.6775C7.25647 15.054 7.23421 15.6868 7.61076 16.0908C7.98731 16.4948 8.62008 16.5171 9.0241 16.1405L11.9502 13.4133L14.6775 16.3394C15.054 16.7434 15.6868 16.7657 16.0908 16.3891C16.4948 16.0126 16.5171 15.3798 16.1405 14.9758L13.4133 12.0497L16.3394 9.32245Z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" fill="#fff" /></svg></section>
+            <a style="margin-top: 20px;" href="">Notificações de eventos</a>
+            <a href="../assets/assistencia.html">Assistência Educacional</a>
+        </div>
+    </main>
+
+    <main class="principal">
+        <div class="add">
+            <span>Notificações</span>
+            <button onclick="criar()">criar</button>
+        </div>
+        <div class="avisos_armazenados"></div>
+    </main>
+    <section class="avisos">
+        <svg id="close_criar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.3394 9.32245C16.7434 8.94589 16.7657 8.31312 16.3891 7.90911C16.0126 7.50509 15.3798 7.48283 14.9758 7.85938L12.0497 10.5866L9.32245 7.66048C8.94589 7.25647 8.31312 7.23421 7.90911 7.61076C7.50509 7.98731 7.48283 8.62008 7.85938 9.0241L10.5866 11.9502L7.66048 14.6775C7.25647 15.054 7.23421 15.6868 7.61076 16.0908C7.98731 16.4948 8.62008 16.5171 9.0241 16.1405L11.9502 13.4133L14.6775 16.3394C15.054 16.7434 15.6868 16.7657 16.0908 16.3891C16.4948 16.0126 16.5171 15.3798 16.1405 14.9758L13.4133 12.0497L16.3394 9.32245Z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" fill="#fff" /></svg>
+        <button class="adicionar" onclick="adicionar()">adicionar aviso</button>
+        <div class="criacao">
+            <div>
+                <span>Criar notificação</span>
+                <section class="criar">
+                    <div>
+                        <label for="aviso">Conteúdo do aviso:</label><br>
+                        <select name="tipo" id="tipo" onchange="changed()">
+                            <option value="" disabled selected>Selecione o tipo do aviso</option>
+                            <option value="aviso1">📌🚨🚨🚨Atenção🚨🚨🚨 📌</option>
+                            <option value="aviso2">🔊🔊🔊 ATENÇÃO 📣📣📣</option>
+                            <option value="pers">Personalizado..</option>
+                        </select>
+                    </div>
+
+                    <textarea name="" id="textarea" cols="30" rows="5">⚠️⚠️⚠️ATENÇÃO⚠️⚠️⚠️</textarea>
+
+                    <div>
+                        <label for="">Selecione o detalhe do aviso</label><br>
+                        <select name="details" id="details">
+                            <option value="default" selected disabled>Selecione o conteúdo do aviso</option>
+                            <option value="saida" id="saida">Sair mais cedo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="data">Data e hora do aviso:</label><br>
+                        <input type="date" name="data" id="data_inicio">
+                        <select name="" id="hr">
+                            <option value="hora" disabled selected>Hora</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                        </select>
+                        <select name="" id="min">
+                            <option value="minutos" selected disabled>Minutos</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="sala">Sala do aviso:</label>
+                        <select name="salas" id="salas">
+                            <option value="secione a sala" disabled selected required>Selecione a sala</option>
+                            <option value="6°A">6°A</option>
+                            <option value="6°B">6°B</option>
+                            <option value="6°C">6°C</option>
+                            <option value="6°D">6°D</option>
+                            <option value="6°E">6°E</option>
+                            <option value="7°A">7°A</option>
+                            <option value="7°B">7°B</option>
+                            <option value="7°C">7°C</option>
+                            <option value="7°D">7°D</option>
+                            <option value="7°E">7°E</option>
+                            <option value="8°A">8°A</option>
+                            <option value="8°B">8°B</option>
+                            <option value="8°C">8°C</option>
+                            <option value="8°D">8°D</option>
+                            <option value="8°E">8°E</option>
+                            <option value="9°A">9°A</option>
+                            <option value="9°B">9°B</option>
+                            <option value="9°C">9°C</option>
+                            <option value="9°D">9°D</option>
+                            <option value="9°E">9°E</option>
+                            <option value="1°A">1°A</option>
+                            <option value="1°B">1°B</option>
+                            <option value="1°C">1°C</option>
+                            <option value="1°D">1°D</option>
+                            <option value="1°E">1°E</option>
+                            <option value="2°A">2°A</option>
+                            <option value="2°B">2°B</option>
+                            <option value="2°C">2°C</option>
+                            <option value="2°D">2°D</option>
+                            <option value="2°E">2°E</option>
+                            <option value="3°A">3°A</option>
+                            <option value="3°B">3°B</option>
+                            <option value="3°C">3°C</option>
+                            <option value="3°D">3°D</option>
+                            <option value="3°E">3°E</option>
+                        </select>
+                    </div>
+
+                    
+                    
+                    
+                    <button id="envia">ver</button>
+                </section>
+            </div>
+            
+            <section id="result" name="result"></section>
+        </div>
+    </section>  
+    <script src="../script/default.js"></script>
+    <script src="../script/notificacoes.js"></script>
+</body>
+</html>
